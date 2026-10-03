@@ -1,0 +1,28 @@
+name: Suggest a workshop idea
+description: Propose a BYOP theme, pattern, or activity
+title: "[Workshop]: "
+labels: [community]
+body:
+  - type: input
+    id: idea
+    attributes:
+      label: Workshop idea
+      placeholder: Evaluating prompts without fooling ourselves
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why would this help the community?
+    validations:
+      required: true
+  - type: dropdown
+    id: help
+    attributes:
+      label: Would you like to help facilitate it?
+      options:
+        - Yes
+        - Maybe—please ask me
+        - Not this time
+    validations:
+      required: true
